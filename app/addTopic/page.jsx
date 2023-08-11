@@ -27,6 +27,7 @@ export default  function page() {
     });
 
       if(res.ok){
+        router.refresh();
         router.push('/');
       }else{
         throw new Error("Failed to create a topic");

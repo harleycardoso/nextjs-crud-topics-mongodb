@@ -27,7 +27,7 @@ export default async function TopicList() {
                 <div>{topic.description}</div>
             </div>
             <div className='flex gap-2'>
-                <RemoveBtn/>
+                <RemoveBtn id={topic._id}/>
                 <Link href={`/editTopic/${topic._id}`}>
                 <FaPencil size={16}/>
                 </Link>
